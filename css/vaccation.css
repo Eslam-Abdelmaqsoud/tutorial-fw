@@ -1,0 +1,563 @@
+/*Start Global rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "work sans" , sans-serif;
+}
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:root{
+    --main-color:rgb(0, 110, 255);
+}
+
+/*small*/
+
+@media (min-width:768px) {
+.container{
+    width:750px;
+}
+
+
+}
+
+/*medium*/
+
+
+@media (min-width:992px) {
+    .container{
+        width:970px;
+    }
+    
+    }
+
+/*large*/
+
+    @media (min-width:1200px) {
+        .container{
+            width:1170px;
+        }
+        
+        }
+
+/*Start Global rules*/
+
+
+nav{
+    background-color: #000;
+ padding:20px ;
+}
+
+nav .container{
+    display: flex;
+}
+
+nav ul{
+display:flex;
+align-items: center;
+list-style-type: none;
+padding: 0;
+margin: 0;
+gap:6px;
+}
+
+nav .container .logo {
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+}
+
+nav ul li a:hover ,
+nav ul li .my-booking{
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 8px;
+}
+
+nav ul li .my-booking{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap:5px;
+}
+
+nav ul li .my-booking i{
+    font-size: 20px;
+}
+ 
+ /*Booking*/
+
+ .booking{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/italy.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 30px;  
+ }
+ 
+
+.booking .container .background  h2{
+    margin-left: 50px;
+}
+
+ .booking .container form fieldset {
+     display: flex;
+     background-color: #19191994;
+     margin-bottom: 25px;
+     color:white;
+     gap: 20px;
+ }
+
+ .booking  .container .background{
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 20px;
+    border: 5px solid var(--main-color) ;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+ }
+
+ .booking  .container .background .eingeben  {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container .eingeben label{
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 2px var(--main-color);
+    font-weight: bold;
+     
+}
+
+.container .eingeben input{
+ height:50px;
+ border-radius: 10px;
+ background-color: #19191994;
+ color:white;
+}
+
+.container .eingeben input{
+    border: none;
+    outline: none;
+}
+
+.container .butto button{
+    width:150px;
+    height:45px;
+    background-color: rgb(0, 110, 255);
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    border:none;
+    outline: none;
+}
+
+.container .butto button:hover{
+    background-color: black;
+    color:white;
+}
+
+input[type="text"],
+input[type="date"]{
+    width:100%;
+    grid-column: span 2;
+    font-size: 17px;
+}
+
+input[type="text"]::placeholder{
+    color: white;
+}
+ 
+
+.passenger{
+    position: relative;   
+    width:95%;
+    background-color: #19191994;
+    color:white;
+    height:50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   .passenger i{
+       margin-right: 8px;
+   }
+
+    .drop {
+       position: absolute;    
+       left:5px;
+       top:-130px;
+       min-width: 160px;
+       list-style-type: none;
+       padding: 0;
+       margin:0;
+       color:white;
+       background-color: #000;
+       border-radius: 3px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       text-align: left;
+   }
+
+
+   .drop li  a{
+        display: inline-block;
+       color: white;
+       padding:12px  60px;
+       text-decoration: none;
+   }
+
+   .drop li  a:hover{
+       background-color:  #f1f1f138;
+   }
+
+   .drop li:not(:last-child){
+       border-bottom: 3px solid  var(--main-color);
+   }
+
+   .drop{
+       display: none;
+   }
+
+   .passenger:hover .drop{
+       display: block;
+   }
+
+   .container .background  p {
+    color: black;
+    text-shadow: 1px 2px var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:12px;
+}
+
+ .icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon .con{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.icon .con i{
+    font-size: 25px;
+}
+
+.icon .con p{
+    font-weight: 600;
+}
+
+.parent{
+    background-color: var(--main-color);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+.parent .middle{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    column-gap: 9%;
+    width:90%;
+    margin-left: 50px;
+    margin-right:50px;
+     
+}
+
+.parent .middle .box{
+background-color: #ccc;
+padding:15px 20px;
+border-radius: 10px;
+}
+
+footer{
+    background-color: #000;
+    padding:15px;
+}
+
+footer .all-groups{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    color:white;
+}
+
+.all-groups .first ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.all-groups .last ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.all-groups .first p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.all-groups .last p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.all-groups .first ul li a{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    color:white;
+    line-height: 1.5;
+}
+
+.all-groups .last ul li a{
+    list-style-type: none;
+    padding: 10px;
+    margin:0;
+    color:white;
+    border:3px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.all-groups .last li a:hover{
+    background-color: white;
+    color:black;
+}
+
+.payment{
+background-color: #ccccccab;
+display: flex;
+justify-content: space-evenly;
+}
+
+.payment i{
+    color:black;
+    font-size: 40px;
+}
+
+.container .rights{
+    color:white;
+    text-align: center;
+}
+
+.social-media i{
+    color:white;
+}
+
+
+
+ 
+ @media (max-width:767px) {
+
+    nav .container{
+        flex-direction: column;
+    }
+
+
+    nav .container .logo{
+        font-size: 25px;
+    }
+    
+    nav ul li a {
+        padding: 10px 3px;
+        font-size: 20px;
+    }
+
+    nav ul li .my-booking{
+        display: none;
+    }
+
+    .booking .container form fieldset {
+        margin-bottom: 0;
+        gap:20px;
+    }
+
+    .booking .container .background .eingeben {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(7, 1fr);
+        column-gap: 0;
+        row-gap: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .booking  .container .background{
+        background-color: #ccccccab;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+     }
+
+    .container .eingeben label{
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    input[type="text"]{
+
+        width:100%;
+    }
+
+    .container .eingeben input{
+     height:50px;
+     border-radius: 10px;
+    }
+
+    .container .eingeben input:focus{
+        border: none;
+        outline: none;
+    }
+
+    .container .butto button{
+        width:100%;
+        height:55px;
+        background-color:var(--main-color);
+        border-radius: 2px;
+        font-size: 25px;
+        margin-left: 0;
+        margin-bottom: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .container .butto button:hover{
+        background-color:black;
+        color:white;
+    }
+
+    .passenger{  
+     width:100%;
+     height:50px;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     margin-left: 0px;
+    }
+
+    .passenger i{
+        margin-right: 8px;
+    }
+    
+    .passenger .line ul li{
+        background-color: #000;
+    }
+
+    .drop li  a{
+         display: inline-block;
+        color: white;
+        padding:12px  60px;
+        text-decoration: none;
+    }
+
+    .drop{
+        display: none;
+    }
+
+    .passenger:hover .drop{
+        display: block;
+    }
+
+    .container .background  p {
+        margin-left: 0;
+    }
+
+    .icon{
+        gap:10px;
+    }
+    
+    .icon .con{
+        gap:10px;
+    }
+
+    .icon .con i{
+        font-size: 25px;
+    }
+
+    .icon .con p{
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .parent .middle{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        column-gap: 0;
+        width:100%;
+         margin-left: 0px;
+        margin-right:0px;
+    }
+    
+    
+    .box{
+    background-color: #ccc;
+    padding:15px 20px;
+    border-radius: 10px;
+    }
+
+    footer .all-groups{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+        color:white;
+    }
+
+    .all-groups .first ul{
+        display: none;
+    }
+
+    .all-groups .first:not(:last-child){
+        border-bottom: 2px solid white;
+    }
+
+    .all-groups .first:hover ul{
+        display: block;
+    }
+
+
+    }
+
