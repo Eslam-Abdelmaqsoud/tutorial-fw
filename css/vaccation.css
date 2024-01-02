@@ -437,10 +437,15 @@ justify-content: space-evenly;
 
     }
 
+    input[type="date"]{
+        width:100%;
+        height:55px;
+    }
+
     .container .eingeben input{
      height:50px;
      border-radius: 10px;
-     width:100%;
+      width:100%;
     }
 
     .container .eingeben input:focus{
