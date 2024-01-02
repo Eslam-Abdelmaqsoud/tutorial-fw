@@ -437,14 +437,10 @@ justify-content: space-evenly;
 
     }
 
-    input[type="text"]{
-
-        width:100%;
-    }
-
     .container .eingeben input{
      height:50px;
      border-radius: 10px;
+     width:100%;
     }
 
     .container .eingeben input:focus{
